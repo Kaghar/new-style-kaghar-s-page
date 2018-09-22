@@ -1,0 +1,78 @@
+.content {
+
+    &__smallBox{
+        height: 23rem;
+        width: 40.5rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        transition: all .2s;
+        
+
+        &-alpin{
+            align-self: flex-end;
+            border-top: 1px solid $color-four;
+            border-left: 1px solid $color-four;
+        }
+        &-beer{
+            border-bottom: 1px solid $color-four;
+            border-right: 1px solid $color-four;
+        }
+        &-trucking{
+            border-bottom: 1px solid $color-four;
+            border-right: 1px solid $color-four;
+        }
+        &-piggame{
+            border-bottom: 1px solid $color-four;
+            border-right: 1px solid $color-four;
+        }
+        &-kaggy{
+            align-self: flex-end;
+            border-top: 1px solid $color-four;
+            border-left: 1px solid $color-four;
+        }
+        &-budgety{
+            align-self: flex-end;
+            border-top: 1px solid $color-four;
+            border-left: 1px solid $color-four;
+        }
+        
+
+        &-title{
+            transition: all .2s;
+            font-size: 4rem;
+            border-bottom: 1px solid $color-four;
+        }
+    
+        &-subtitle{
+            font-size: 1.5rem;
+            color: $color-text-dark;
+            border-bottom: 1px solid $color-four;
+            transition: all .2s;
+        }
+    
+        &-iconBox{
+            margin-top: 1rem;
+            transition: all .2s;
+            
+            &--icon {
+                
+                margin: 0 1rem;
+                height: 3rem;
+                width: 3rem;
+                fill: $color-text-dark;
+                transition: all .2s;
+                
+
+                &:hover{
+                    fill: $color-four;
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+
+    
+}

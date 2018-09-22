@@ -1,0 +1,70 @@
+.projects {
+    grid-column: full-start / full-end;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid $color-four;
+    margin: 0 2rem 7rem 2rem;
+    
+    
+    &__box{
+        width: 81rem;
+        height: 46rem;
+        display:flex;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 2rem;
+        
+        
+        &-alpin{
+            justify-content: flex-end;
+            background-image: url("../../resource/img/alpin.png");
+            
+        }
+
+        &-beer {
+            background-image: url("../../resource/img/beer.png");
+        }
+        
+        &-trucking{
+            background-image: url("../../resource/img/trucking.png");
+        }
+        &-piggame{
+            background-image: url("../../resource/img/piggame.png");
+        }
+        &-kaggy{
+            justify-content: flex-end;
+            background-image: url("../../resource/img/kaggy.png");
+        }
+        &-budgety{
+            justify-content: flex-end;
+            background-image: url("../../resource/img/budgety.png");
+        }
+    }
+    
+    
+
+    &__heading{
+        width: 100%;
+        z-index: 11;
+        position: relative;
+        
+        &-title {
+
+            position: absolute;
+            top: 11rem;
+            left:1rem;
+
+            @media only screen and (max-width: $bp-large) {
+                top: 8rem;
+                
+            }
+            @media only screen and (max-width: 370px) {
+                top: 5rem;
+                left:0;
+            }
+        
+        }
+    }
+}

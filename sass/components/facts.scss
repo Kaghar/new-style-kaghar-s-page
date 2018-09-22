@@ -1,0 +1,109 @@
+.facts {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 50rem;
+    padding: 2rem 1rem 2rem 1rem;
+    
+
+    &__textBox{
+        display:flex;
+        flex-direction: column;
+    }
+
+    &__icon {
+
+        &-icon {
+            height: 10rem;
+            width: 10rem;
+            margin: 0 1rem;
+            fill: $color-text-dark;
+            
+            
+        }
+    }
+    
+    &__heading{
+
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        &-yellowHead{
+            font-size: 4rem;
+            margin: 0 1rem;
+        }
+    
+        &-head{
+            font-size: 3rem;
+        }
+    }
+
+    &__text{
+
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+
+        
+        &-big{
+            font-size: 1.2rem;
+
+        }
+        &-small{
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+        &-button{
+            align-self: flex-start;
+            transition: all .2s;
+            &:visited,
+            &:link {
+                text-decoration: none;
+                color: $color-text-dark;
+                font-size: 1.3rem;
+                
+
+            }
+            &:hover{
+                transform: scale(1.1);
+                transition: all .2s;
+            }
+
+            
+        }
+    }
+    
+    &__hardworking{ 
+        border-right: .5px solid $color-four;
+        border-bottom: .5px solid $color-four;
+    }
+    &__multitasker{
+        border-bottom: .5px solid $color-four;
+        @media only screen and (max-width: 894px) {
+            border-left: .5px solid $color-four;
+    
+        }
+        
+    }
+    &__ambitious{
+        
+        border-right: .5px solid $color-four;
+       
+    }
+
+    &__quicklearner{
+        @media only screen and (max-width: 894px) {
+            border-left: .5px solid $color-four;
+            border-top: .5px solid $color-four;
+    
+        }
+        
+    }
+    
+}
